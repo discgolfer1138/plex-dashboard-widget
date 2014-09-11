@@ -20,7 +20,11 @@ function load()
 {
     dashcode.setupParts();
     alert("widget.identifier: "+widget.identifier);
-    showBack();
+    // check prefs are set
+    var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
+    var port = widget.preferenceForKey(widget.identifier + "-" + "port");
+    var clientHost = widget.preferenceForKey(widget.identifier + "-" + "clientHost");
+    if(!hostname || !port || !clientHost) showBack();
 }
 
 //
@@ -137,9 +141,9 @@ function reloadClients(event)
 function updateClientList(){
     var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
     var port = widget.preferenceForKey(widget.identifier + "-" + "port");
-    var feedURL = "http://" + hostname + ":" + port + "/clients";
-    alert(feedURL);
-    loadClientXML(feedURL);
+    var clientListURL = "http://" + hostname + ":" + port + "/clients";
+    alert(clientListURL);
+    loadClientXML(clientListURL);
 }
 
 function loadClientXML(url) {
@@ -177,20 +181,21 @@ function parseClientXML(clientXML){
 
 function setClient(){
     var popClient = document.getElementById("popClient").object;
-    var client = popClient.getValue();
-    widget.setPreferenceForKey(client, widget.identifier + "-" + "client");
-    alert('client set to: '+client);
+    var clientHost = popClient.getValue();
+    var clientName = popClient.getName();
+    widget.setPreferenceForKey(clientHost, widget.identifier + "-" + "clientHost");
+    alert('client set to: '+clientName+" - "+clientHost);
 }
 
 function sendNavigationAction(event)
 {
-    var btnId = this.element.id;
+    var btnId = event.toElement.parentNode.id;
     var actionCmd = btnIdToActionCmd[btnId];
 
     var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
     var port = widget.preferenceForKey(widget.identifier + "-" + "port");
-    var client = widget.preferenceForKey(widget.identifier + "-" + "client");
-    var cmdURL = "http://"+hostname+":"+port+"/system/players/"+client+"/navigation/"+actionCmd;
+    var clientHost = widget.preferenceForKey(widget.identifier + "-" + "clientHost");
+    var cmdURL = "http://"+hostname+":"+port+"/system/players/"+clientHost+"/navigation/"+actionCmd;
 
     //send cmd
     xmlRequest = new XMLHttpRequest();
@@ -198,7 +203,18 @@ function sendNavigationAction(event)
     xmlRequest.open("GET",cmdURL,true);
     xmlRequest.send(null);
 
-    // Insert Code Here
     alert('button clicked for navAction '+actionCmd);
     alert('cmdUrl: '+cmdURL);
+}
+
+function imageswap1(event) {
+    var dot = event.toElement.src.lastIndexOf(".");
+    var imagename = event.toElement.src.substr(0,dot);
+    event.toElement.src = imagename + "_on.png";
+}
+
+function imageswap2(event) {
+    var dot = event.toElement.src.indexOf("_on.png");
+    var imagename = event.toElement.src.substr(0,dot);
+    event.toElement.src = imagename + ".png";
 }
