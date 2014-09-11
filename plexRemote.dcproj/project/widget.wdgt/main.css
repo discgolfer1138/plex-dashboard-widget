@@ -301,14 +301,14 @@ body {
     border-color: black;
     position: absolute;
     left: 305px;
-    top: 86px;
+    top: 88px;
     margin-top: 0px;
     background-image: url(Images/btnToggleOSD.png);
     width: 28px;
     height: auto;
     right: 81px;
     min-height: 28px;
-    bottom: 25px;
+    bottom: 23px;
     background-repeat: no-repeat no-repeat;
 }
 
