@@ -4,7 +4,7 @@
 <dict>
 	<key>Breakpoints</key>
 	<dict>
-		<key>widget.wdgt/main.js:171</key>
+		<key>widget.wdgt/main.js:173</key>
 		<string>-</string>
 	</dict>
 	<key>BreakpointsFrame</key>
@@ -57,9 +57,9 @@
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
-		<integer>1</integer>
+		<integer>5</integer>
 		<key>SplitViewConfig</key>
-		<integer>1</integer>
+		<integer>3</integer>
 		<key>_indexOfCollapsedView</key>
 		<integer>0</integer>
 		<key>sizes</key>
@@ -100,7 +100,7 @@
 			<array>
 				<integer>0</integer>
 				<integer>1</integer>
-				<integer>7</integer>
+				<integer>2</integer>
 			</array>
 		</array>
 		<key>Opened Steps</key>

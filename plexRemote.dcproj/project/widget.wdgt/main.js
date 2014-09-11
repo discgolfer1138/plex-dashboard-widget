@@ -11,6 +11,7 @@
 function load()
 {
     dashcode.setupParts();
+    alert("widget.identifier: "+widget.identifier);
     showBack();
 }
 
@@ -88,6 +89,8 @@ function showBack(event)
 //
 function showFront(event)
 {
+    setClient();
+
     var front = document.getElementById("front");
     var back = document.getElementById("back");
 
@@ -111,7 +114,7 @@ if (window.widget) {
 }
 
 
-function hostInfoChanged(event)
+function reloadClients(event)
 {
     var hostname = document.getElementById("txtHost").value;
     var port = document.getElementById("txtPort").value;
@@ -141,8 +144,6 @@ function loadClientXML(url) {
    xmlRequest.send(null);
 }
 
-
-
 function processRequestChange(xmlRequest) {   
    if (null == xmlRequest.readyState) return;
    if (xmlRequest.readyState == 4) {
@@ -160,11 +161,12 @@ function parseClientXML(clientXML){
     var clientNodes = clientXML.getElementsByTagName('Server');
     var clients = [];
     for (var i = 0; i < clientNodes.length; ++i) {
-        var client = [];
-        client.push(clientNodes[i].attributes.name.value);
-        client.push(clientNodes[i].attributes.host.value);
-        clients.push(client);
+        clients.push([clientNodes[i].attributes.name.value, clientNodes[i].attributes.host.value]);
     }
     var popClient = document.getElementById("popClient").object;
     popClient.setOptions(clients);
+}
+
+function setClient(){
+    widget.setPreferenceForKey(popClient.getValue, widget.identifier + "-" + "client");
 }

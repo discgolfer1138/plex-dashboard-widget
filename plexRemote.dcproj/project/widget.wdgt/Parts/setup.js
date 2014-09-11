@@ -8,6 +8,7 @@ var dashcodePartSpecs = {
     "btnBack": { "creationFunction": "CreateButton", "leftImageWidth": 10, "rightImageWidth": 1 },
     "btnNext": { "creationFunction": "CreateButton", "leftImageWidth": 1, "rightImageWidth": 10 },
     "btnPlayPause": { "creationFunction": "CreateButton", "leftImageWidth": 11, "rightImageWidth": 11, "text": "Play" },
+    "btnReloadClients": { "creationFunction": "CreateButton", "leftImageWidth": 10, "onclick": "reloadClients", "rightImageWidth": 10, "text": "Reload Clients" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Done" },
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
     "lblClient": { "text": "client", "view": "DC.Text" },

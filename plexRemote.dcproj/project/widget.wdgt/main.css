@@ -200,3 +200,19 @@ body {
     margin-top: 0px;
     bottom: 26px;
 }
+
+#btnReloadClients {
+    font-family: HelveticaNeue-Bold;
+    font-size: 12px;
+    text-align: center;
+    width: 102px;
+    cursor: default;
+    -khtml-user-select: none;
+    height: auto;
+    position: absolute;
+    left: 153px;
+    top: 65px;
+    right: auto;
+    margin-top: 0px;
+    bottom: 56px;
+}
