@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+</head>
+<body onload="load();" apple-part="com.apple.Dashcode.part.StackLayout">
+    <div id="front">
+        <img id="frontImg" src="Parts/Images/front.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.frontimage" apple-style="image-theme: 1; image-shape: 3; image-opacity: 1.00; image-top-color: 1.0000,1.0000,1.0000; image-bottom-color: 0.6154,0.6154,0.6154; image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.5294,0.5294,0.5294; image-border-width: 1; shine-strength: 0.9; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
+        <div class="apple-no-children" id="info" apple-part="com.apple.Dashcode.part.infobutton" apple-default-image-visibility="hidden"></div>
+        <div id="btnBack" apple-part="com.apple.Dashcode.part.lozengeleftbutton" class="apple-no-children" apple-style="image-theme: 1; image-shape: 7; image-button-type: 0; image-opacity: 1.00; image-top-color: 1,1,1,1; image-bottom-color: 0.6154,0.6154,0.6154,1; image-radius: 10,0,10,0; image-border: 1; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 1; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 0;"></div>
+        <div id="btnNext" apple-part="com.apple.Dashcode.part.lozengerightbutton" class="apple-no-children" apple-style="image-theme: 1; image-shape: 8; image-button-type: 0; image-opacity: 1.00; image-top-color: 1,1,1,1; image-bottom-color: 0.6154,0.6154,0.6154,1; image-radius: 0,10,0,10; image-border: 1; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 1; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 0;"></div>
+        <div id="btnPlayPause" apple-part="com.apple.Dashcode.part.lozengetextbutton" class="apple-no-children" apple-style="image-theme: 1; image-shape: 1; image-button-type: 0; image-opacity: 1.00; image-top-color: 1,1,1,1; image-bottom-color: 0.6154,0.6154,0.6154,1; image-radius: 11,11,11,11; image-border: 1; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 1; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 0;"></div>
+        <div id="lblNowPlaying" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" apple-style="part-height-dependent: true;"></div>
+    </div>
+    <div id="back">
+        <img id="backImg" src="Parts/Images/back.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.backimage" apple-style=" image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.1500,0.1500,0.1500; image-border-width: 3; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
+        <div id="done" class="apple-no-children" apple-part="com.apple.Dashcode.part.glassbutton"></div>
+        <input id="txtHost" type="text" name="" value="slingshot.local" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" onblur="hostInfoChanged(event)">
+        <div id="lblHost" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+        <input id="txtPort" type="text" name="" value="32400" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" onblur="hostInfoChanged(event)" maxlength="6">
+        <div id="lblPort" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+        <div id="lblClient" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+        <div id="popClients" apple-part="com.apple.Dashcode.part.lozengepopupbutton" class="apple-no-children" apple-style="image-theme: 1; image-shape: 1; image-button-type: 1; image-opacity: 1.00; image-top-color: 1,1,1,1; image-bottom-color: 0.6154,0.6154,0.6154,1; image-radius: 8,8,8,8; image-border: 1; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 1; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 0;"></div>
+    </div>
+</body>
+</html>
