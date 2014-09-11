@@ -4,9 +4,9 @@
 <dict>
 	<key>Breakpoints</key>
 	<dict>
-		<key>widget.wdgt/main.js:188</key>
+		<key>widget.wdgt/main.js:202</key>
 		<string>-sendNavigationAction</string>
-		<key>widget.wdgt/main.js:191</key>
+		<key>widget.wdgt/main.js:206</key>
 		<string>-</string>
 	</dict>
 	<key>BreakpointsFrame</key>

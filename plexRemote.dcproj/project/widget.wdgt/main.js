@@ -176,7 +176,10 @@ function parseClientXML(clientXML){
 }
 
 function setClient(){
-    widget.setPreferenceForKey(popClient.getValue, widget.identifier + "-" + "client");
+    var popClient = document.getElementById("popClient").object;
+    var client = popClient.getValue();
+    widget.setPreferenceForKey(client, widget.identifier + "-" + "client");
+    alert('client set to: '+client);
 }
 
 function sendNavigationAction(event)
@@ -184,6 +187,18 @@ function sendNavigationAction(event)
     var btnId = this.element.id;
     var actionCmd = btnIdToActionCmd[btnId];
 
+    var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
+    var port = widget.preferenceForKey(widget.identifier + "-" + "port");
+    var client = widget.preferenceForKey(widget.identifier + "-" + "client");
+    var cmdURL = "http://"+hostname+":"+port+"/system/players/"+client+"/navigation/"+actionCmd;
+
+    //send cmd
+    xmlRequest = new XMLHttpRequest();
+    xmlRequest.setRequestHeader("Cache-Control", "no-cache");
+    xmlRequest.open("GET",cmdURL,true);
+    xmlRequest.send(null);
+
     // Insert Code Here
     alert('button clicked for navAction '+actionCmd);
+    alert('cmdUrl: '+cmdURL);
 }
