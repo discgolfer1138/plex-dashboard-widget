@@ -15,14 +15,14 @@
         <img id="frontImg" src="Parts/Images/front.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.frontimage" apple-style="image-theme: 1; image-shape: 3; image-opacity: 1.00; image-top-color: 0.200000003,0.200000003,0.200000003,1; image-bottom-color: 0,0,0,1; image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 1; shine-on: 0; shine-strength: 0.39; shine-alpha-level: 0.28; shine-height: 0.25; glass-arc-height: 0.06; shadow-include-shadow: 1; shadow-offset: -1.00,-6.00; shadow-color: 0,0,0,0.3333;">
         <div class="apple-no-children" id="info" apple-part="com.apple.Dashcode.part.infobutton" apple-default-image-visibility="hidden"></div>
         <div apple-part="com.apple.Dashcode.part.imageLayout" id="plexLogo" apple-group="image5" apple-locked="true"><img class="apple-hidden" src="Images/Plex_sm.png" id="inner_image5" apple-group="image5"></div>
-        <div id="btnMoveLeft" apple-part="com.apple.Dashcode.part.box" class="navBtn"></div>
-        <div id="btnBack" apple-part="com.apple.Dashcode.part.box" class="navBtn"></div>
-        <div id="btnToggleOSD" apple-part="com.apple.Dashcode.part.box" class="navBtn"></div>
-        <div id="btnContextMenu" apple-part="com.apple.Dashcode.part.box" class="navBtn"></div>
-        <div id="btnSelect" apple-part="com.apple.Dashcode.part.box" class="navBtn"></div>
-        <div id="btnMoveRight" apple-part="com.apple.Dashcode.part.box" class="navBtn"></div>
-        <div id="btnMoveUp" apple-part="com.apple.Dashcode.part.box" class="navBtn"></div>
-        <div id="btnMoveDown" apple-part="com.apple.Dashcode.part.box" class="navBtn"></div>
+        <div id="btnMoveLeft" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendNavigationAction(event)"></div>
+        <div id="btnBack" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendNavigationAction(event)"></div>
+        <div id="btnToggleOSD" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendNavigationAction(event)"></div>
+        <div id="btnContextMenu" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendNavigationAction(event)"></div>
+        <div id="btnSelect" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendNavigationAction(event)"></div>
+        <div id="btnMoveRight" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendNavigationAction(event)"></div>
+        <div id="btnMoveUp" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendNavigationAction(event)"></div>
+        <div id="btnMoveDown" apple-part="com.apple.Dashcode.part.box" class="navBtn" onclick="sendNavigationAction(event)"></div>
     </div>
     <div id="back">
         <img id="backImg" src="Parts/Images/back.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.backimage" apple-style=" image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.1500,0.1500,0.1500; image-border-width: 3; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">

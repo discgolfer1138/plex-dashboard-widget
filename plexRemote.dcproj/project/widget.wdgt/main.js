@@ -192,7 +192,7 @@ function setClient(){
 
 function sendNavigationAction(event)
 {
-    var btnId = event.toElement.parentNode.id;
+    var btnId = event.toElement.id;
     var actionCmd = btnIdToActionCmd[btnId];
 
     var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
