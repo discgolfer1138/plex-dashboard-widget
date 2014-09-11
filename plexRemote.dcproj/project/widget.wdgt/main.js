@@ -187,6 +187,10 @@ function setClient(){
     var clientHost = popClient.getValue();
     var clientName = popClient.getName();
     widget.setPreferenceForKey(clientHost, widget.identifier + "-" + "clientHost");
+
+    var lblCurrentClient = document.getElementById("lblCurrentClient");
+    lblCurrentClient.textContent = clientHost;
+
     alert('client set to: '+clientName+" - "+clientHost);
 }
 

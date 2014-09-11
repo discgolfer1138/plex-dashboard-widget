@@ -9,12 +9,15 @@ var dashcodePartSpecs = {
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Done" },
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
     "lblClient": { "text": "client", "view": "DC.Text" },
+    "lblCurrentClient": { "text": "client not set", "view": "DC.Text" },
     "lblHost": { "text": "host", "view": "DC.Text" },
     "lblPort": { "text": "port", "view": "DC.Text" },
     "plexLogo": { "view": "DC.ImageLayout" },
     "popClient": { "creationFunction": "CreatePopupButton", "leftImageWidth": 11, "options": ["Item 1", "Item 2", "Item 3"], "rightImageWidth": 16 },
+    "rectangleShape": { "creationFunction": "CreateShape", "leftImageWidth": 5, "rightImageWidth": 5 },
     "txtHost": { "view": "DC.TextField" }
 };
+
 
 
 

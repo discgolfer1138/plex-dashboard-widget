@@ -26,6 +26,8 @@ body {
     bottom: 18px;
     width: 13px;
     height: 13px;
+    top: 106px;
+    left: 16px;
 }
 
 #back {
@@ -153,11 +155,11 @@ body {
 }
 
 #plexLogo {
-    width: 104px;
-    height: 94px;
+    width: 100px;
+    height: 90px;
     position: absolute;
     left: 20px;
-    top: 22px;
+    top: 11px;
     right: auto;
     bottom: auto;
     margin-top: 0px;
@@ -334,4 +336,36 @@ body {
 
 #btnContextMenu:hover {
     background-image: url(Images/btnContextMenu_on.png);
+}
+
+#lblCurrentClient {
+    font-size: 10px;
+    font-family: 'Lucida Grande';
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 104px;
+    margin-top: 0px;
+    color: rgb(253, 130, 8);
+    text-align: center;
+    right: 303px;
+    bottom: 23px;
+}
+
+.selected #lblCurrentClient {
+    color: white;
+}
+
+#rectangleShape {
+    width: 276px;
+    height: 101px;
+    position: absolute;
+    left: 128px;
+    top: 18px;
+    right: auto;
+    bottom: auto;
+    margin-top: 0px;
 }
