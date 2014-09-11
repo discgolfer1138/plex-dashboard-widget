@@ -148,9 +148,6 @@ function processRequestChange(xmlRequest) {
    if (xmlRequest.readyState == 4) {
       if (xmlRequest.status == 200) {      
          alert("XML loaded");
-        //var xmlSerializer = new XMLSerializer();
-         //alert(xmlSerializer.serializeToString(xmlRequest.responseXML));
-
          parseClientXML(xmlRequest.responseXML);
       } else {
          alert("XML load failed - no connection");
@@ -163,20 +160,11 @@ function parseClientXML(clientXML){
     var clientNodes = clientXML.getElementsByTagName('Server');
     var clients = [];
     for (var i = 0; i < clientNodes.length; ++i) {
-        var client = {};
-        client.name = clientNodes[i].attributes.name.value;
-        client.host = clientNodes[i].attributes.host.value;
+        var client = [];
+        client.push(clientNodes[i].attributes.name.value);
+        client.push(clientNodes[i].attributes.host.value);
         clients.push(client);
     }
-    populateClientList(clients);
-}
-
-function populateClientList(clients){
-    var popClients = document.getElementById("popClients");
-    for (var a in popClients.options) { popClients.options.remove(0); }
-    for(var i=0; i<clients.length; i++){
-        var el = new Option(clients[i].name, clients[i].host, true);
-        popClients.appendChild(el);
-        alert(clients[i].name+" - "+clients[i].host+" was added");
-    }
+    var popClient = document.getElementById("popClient").object;
+    popClient.setOptions(clients);
 }

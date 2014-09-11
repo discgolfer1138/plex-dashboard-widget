@@ -4,17 +4,11 @@
 <dict>
 	<key>Breakpoints</key>
 	<dict>
-		<key>widget.wdgt/main.js:116</key>
-		<string>-hostInfoChanged</string>
-		<key>widget.wdgt/main.js:147</key>
-		<string>-processRequestChange</string>
-		<key>widget.wdgt/main.js:164</key>
-		<string>-parseClientXML</string>
-		<key>widget.wdgt/main.js:167</key>
-		<string>-parseClientXML</string>
-		<key>widget.wdgt/main.js:172</key>
-		<string>-parseClientXML</string>
+		<key>widget.wdgt/main.js:171</key>
+		<string>-</string>
 	</dict>
+	<key>BreakpointsFrame</key>
+	<string>245 391 404 338 0 0 1366 746 </string>
 	<key>CYLastWindowPosition</key>
 	<string>{706, 280}</string>
 	<key>ContentSplitViewGeometry</key>
@@ -38,6 +32,8 @@
 		<key>Destination</key>
 		<string>localhost.default</string>
 		<key>Path</key>
+		<string>plexRemote</string>
+		<key>WidgetDeployName</key>
 		<string>plexRemote</string>
 		<key>enableSimulation</key>
 		<true/>
@@ -86,6 +82,17 @@
 			<array>
 				<integer>0</integer>
 				<integer>1</integer>
+			</array>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>7</integer>
+			</array>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>7</integer>
+				<integer>0</integer>
 			</array>
 		</array>
 		<key>Objects view last selections</key>

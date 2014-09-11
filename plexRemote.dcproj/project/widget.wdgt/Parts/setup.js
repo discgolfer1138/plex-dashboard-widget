@@ -14,7 +14,7 @@ var dashcodePartSpecs = {
     "lblHost": { "text": "host", "view": "DC.Text" },
     "lblNowPlaying": { "text": "Now Playing", "view": "DC.Text" },
     "lblPort": { "text": "port", "view": "DC.Text" },
-    "popClients": { "creationFunction": "CreatePopupButton", "leftImageWidth": 9, "options": [["Clients Go Here", "Item 1"]], "rightImageWidth": 16 },
+    "popClient": { "creationFunction": "CreatePopupButton", "leftImageWidth": 11, "options": ["Item 1", "Item 2", "Item 3"], "rightImageWidth": 16 },
     "txtHost": { "view": "DC.TextField" }
 };
 

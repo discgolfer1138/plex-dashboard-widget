@@ -9,7 +9,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Untitled</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.spitfire.widget.Untitled</string>
+	<string>io.thechad.widget.plexRemote</string>
 	<key>CFBundleName</key>
 	<string>Untitled</string>
 	<key>CFBundleShortVersionString</key>
