@@ -206,15 +206,3 @@ function sendNavigationAction(event)
     alert('button clicked for navAction '+actionCmd);
     alert('cmdUrl: '+cmdURL);
 }
-
-function imageswap1(event) {
-    var dot = event.toElement.src.lastIndexOf(".");
-    var imagename = event.toElement.src.substr(0,dot);
-    event.toElement.src = imagename + "_on.png";
-}
-
-function imageswap2(event) {
-    var dot = event.toElement.src.indexOf("_on.png");
-    var imagename = event.toElement.src.substr(0,dot);
-    event.toElement.src = imagename + ".png";
-}

@@ -6,7 +6,7 @@
 	<dict>
 		<key>widget.wdgt/main.js:207</key>
 		<string>-sendNavigationAction</string>
-		<key>widget.wdgt/main.js:221</key>
+		<key>widget.wdgt/main.js:209</key>
 		<string>-</string>
 	</dict>
 	<key>BreakpointsFrame</key>
@@ -23,8 +23,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1135, 164}}</string>
-			<string>{{0, 174}, {1135, 466}}</string>
+			<string>{{0, 0}, {1121, 185}}</string>
+			<string>{{0, 195}, {1121, 445}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
@@ -50,8 +50,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {230, 661}}</string>
-			<string>{{231, 0}, {1136, 661}}</string>
+			<string>{{0, 0}, {244, 661}}</string>
+			<string>{{245, 0}, {1122, 661}}</string>
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
@@ -66,8 +66,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {232, 303}}</string>
-			<string>{{0, 313}, {232, 327}}</string>
+			<string>{{0, 0}, {246, 352}}</string>
+			<string>{{0, 362}, {246, 278}}</string>
 		</array>
 	</dict>
 	<key>Widget</key>

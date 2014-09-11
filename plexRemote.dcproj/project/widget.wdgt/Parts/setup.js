@@ -5,20 +5,16 @@
  code generator otherwise the changes will be lost.
  */
 var dashcodePartSpecs = {
-    "btnMoveDown": { "view": "DC.ImageLayout" },
-    "btnMoveRight": { "view": "DC.ImageLayout" },
-    "btnMoveUp": { "view": "DC.ImageLayout" },
     "btnReloadClients": { "creationFunction": "CreateButton", "leftImageWidth": 10, "onclick": "reloadClients", "rightImageWidth": 10, "text": "Reload Clients" },
-    "btnSelect": { "view": "DC.ImageLayout" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Done" },
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
     "lblClient": { "text": "client", "view": "DC.Text" },
-    "lblCurrentClient": { "view": "DC.Text" },
     "lblHost": { "text": "host", "view": "DC.Text" },
     "lblPort": { "text": "port", "view": "DC.Text" },
     "plexLogo": { "view": "DC.ImageLayout" },
     "popClient": { "creationFunction": "CreatePopupButton", "leftImageWidth": 11, "options": ["Item 1", "Item 2", "Item 3"], "rightImageWidth": 16 },
     "txtHost": { "view": "DC.TextField" }
 };
+
 
 
