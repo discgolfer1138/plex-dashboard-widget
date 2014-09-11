@@ -4,6 +4,14 @@
  according to the license.txt file included in the project.
  */
 
+var btnIdToActionCmd = {
+    'btnMoveUp':'moveUp',
+    'btnMoveDown':'moveDown',
+    'btnMoveLeft':'moveLeft',
+    'btnMoveRight':'moveRight',
+    'btnSelect':'select'
+};
+
 //
 // Function: load()
 // Called by HTML body element's onload event when the widget is ready to start
@@ -169,4 +177,13 @@ function parseClientXML(clientXML){
 
 function setClient(){
     widget.setPreferenceForKey(popClient.getValue, widget.identifier + "-" + "client");
+}
+
+function sendNavigationAction(event)
+{
+    var btnId = this.element.id;
+    var actionCmd = btnIdToActionCmd[btnId];
+
+    // Insert Code Here
+    alert('button clicked for navAction '+actionCmd);
 }

@@ -5,10 +5,12 @@
  code generator otherwise the changes will be lost.
  */
 var dashcodePartSpecs = {
-    "btnBack": { "creationFunction": "CreateButton", "leftImageWidth": 10, "rightImageWidth": 1 },
-    "btnNext": { "creationFunction": "CreateButton", "leftImageWidth": 1, "rightImageWidth": 10 },
-    "btnPlayPause": { "creationFunction": "CreateButton", "leftImageWidth": 11, "rightImageWidth": 11, "text": "Play" },
+    "btnMoveDown": { "creationFunction": "CreateButton", "leftImageWidth": 10, "onclick": "sendNavigationAction", "rightImageWidth": 10, "text": "move down" },
+    "btnMoveLeft": { "creationFunction": "CreateButton", "leftImageWidth": 10, "onclick": "sendNavigationAction", "rightImageWidth": 10, "text": "move left" },
+    "btnMoveRight": { "creationFunction": "CreateButton", "leftImageWidth": 11, "onclick": "sendNavigationAction", "rightImageWidth": 11, "text": "move right" },
+    "btnMoveUp": { "creationFunction": "CreateButton", "leftImageWidth": 10, "onclick": "sendNavigationAction", "rightImageWidth": 10, "text": "move up" },
     "btnReloadClients": { "creationFunction": "CreateButton", "leftImageWidth": 10, "onclick": "reloadClients", "rightImageWidth": 10, "text": "Reload Clients" },
+    "btnSelect": { "creationFunction": "CreateButton", "leftImageWidth": 11, "onclick": "sendNavigationAction", "rightImageWidth": 11, "text": "ok" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Done" },
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
     "lblClient": { "text": "client", "view": "DC.Text" },

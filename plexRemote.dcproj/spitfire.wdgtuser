@@ -4,7 +4,9 @@
 <dict>
 	<key>Breakpoints</key>
 	<dict>
-		<key>widget.wdgt/main.js:173</key>
+		<key>widget.wdgt/main.js:188</key>
+		<string>-sendNavigationAction</string>
+		<key>widget.wdgt/main.js:191</key>
 		<string>-</string>
 	</dict>
 	<key>BreakpointsFrame</key>
@@ -21,8 +23,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1121, 164}}</string>
-			<string>{{0, 174}, {1121, 466}}</string>
+			<string>{{0, 0}, {1189, 164}}</string>
+			<string>{{0, 174}, {1189, 466}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
@@ -48,8 +50,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {244, 661}}</string>
-			<string>{{245, 0}, {1122, 661}}</string>
+			<string>{{0, 0}, {176, 661}}</string>
+			<string>{{177, 0}, {1190, 661}}</string>
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
@@ -64,8 +66,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {246, 303}}</string>
-			<string>{{0, 313}, {246, 327}}</string>
+			<string>{{0, 0}, {178, 303}}</string>
+			<string>{{0, 313}, {178, 327}}</string>
 		</array>
 	</dict>
 	<key>Widget</key>
@@ -99,8 +101,8 @@
 		<array>
 			<array>
 				<integer>0</integer>
-				<integer>1</integer>
-				<integer>2</integer>
+				<integer>0</integer>
+				<integer>4</integer>
 			</array>
 		</array>
 		<key>Opened Steps</key>
@@ -110,7 +112,7 @@
 		</array>
 		<key>Visible StackLayout Views</key>
 		<array>
-			<string>back</string>
+			<string>front</string>
 		</array>
 	</dict>
 </dict>

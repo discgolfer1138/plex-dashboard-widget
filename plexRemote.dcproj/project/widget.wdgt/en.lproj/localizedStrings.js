@@ -5,6 +5,13 @@
  code generator otherwise the changes will be lost.
  */
 var localizedStrings = {
-    "Done": "Done"
+    "Done": "Done",
+    "left": "<<",
+    "move down": "v",
+    "move left": "<",
+    "move right": ">",
+    "move up": "^",
+    "ok": "OK",
+    "right": ">>"
 };
 
