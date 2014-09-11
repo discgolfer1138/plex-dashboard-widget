@@ -9,7 +9,10 @@ var btnIdToActionCmd = {
     'btnMoveDown':'moveDown',
     'btnMoveLeft':'moveLeft',
     'btnMoveRight':'moveRight',
-    'btnSelect':'select'
+    'btnSelect':'select',
+    'btnBack':'back',
+    'btnContextMenu':'contextMenu',
+    'btnToggleOSD':'toggleOSD'
 };
 
 //

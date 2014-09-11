@@ -275,3 +275,63 @@ body {
 #btnMoveDown:hover {
     background-image: url(Images/btnMoveDown_on.png);
 }
+
+#btnBack {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 305px;
+    top: 24px;
+    margin-top: 0px;
+    background-image: url(Images/btnBack.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 87px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnBack:hover {
+    background-image: url(Images/btnBack_on.png);
+}
+
+#btnToggleOSD {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 305px;
+    top: 86px;
+    margin-top: 0px;
+    background-image: url(Images/btnToggleOSD.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 25px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnToggleOSD:hover {
+    background-image: url(Images/btnToggleOSD_on.png);
+}
+
+#btnContextMenu {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 370px;
+    top: 24px;
+    margin-top: 0px;
+    background-image: url(Images/btnContextMenu.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 87px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnContextMenu:hover {
+    background-image: url(Images/btnContextMenu_on.png);
+}
