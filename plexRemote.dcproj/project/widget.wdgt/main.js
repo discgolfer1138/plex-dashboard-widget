@@ -15,6 +15,20 @@ var btnIdToActionCmd = {
     'btnToggleOSD':'toggleOSD'
 };
 
+var btnIdToPlaybackCmd = {
+    'btnPlay':'play',
+    'btnPause':'pause',
+    'btnStop':'stop',
+    'btnRewind':'rewind',
+    'btnFastForward':'fastForward',
+    'btnStepForward':'stepForward',
+    'btnBigStepForward':'bigStepForward',
+    'btnStepBack':'stepBack',
+    'btnBigStepBack':'bigStepBack',
+    'btnSkipNext':'skipNext',
+    'btnSkipPrevious':'skipPrevious'
+};
+
 //
 // Function: load()
 // Called by HTML body element's onload event when the widget is ready to start

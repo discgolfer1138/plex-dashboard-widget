@@ -4,9 +4,9 @@
 <dict>
 	<key>Breakpoints</key>
 	<dict>
-		<key>widget.wdgt/main.js:214</key>
+		<key>widget.wdgt/main.js:228</key>
 		<string>-sendNavigationAction</string>
-		<key>widget.wdgt/main.js:216</key>
+		<key>widget.wdgt/main.js:230</key>
 		<string>-</string>
 	</dict>
 	<key>BreakpointsFrame</key>
@@ -66,8 +66,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {246, 352}}</string>
-			<string>{{0, 362}, {246, 278}}</string>
+			<string>{{0, 0}, {246, 172}}</string>
+			<string>{{0, 182}, {246, 458}}</string>
 		</array>
 	</dict>
 	<key>Widget</key>
@@ -75,10 +75,6 @@
 		<key>Objects view expanded items</key>
 		<array>
 			<array>
-				<integer>0</integer>
-			</array>
-			<array>
-				<integer>0</integer>
 				<integer>0</integer>
 			</array>
 			<array>
@@ -100,6 +96,10 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>8</integer>
+			</array>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
 			</array>
 		</array>
 		<key>Objects view last selections</key>

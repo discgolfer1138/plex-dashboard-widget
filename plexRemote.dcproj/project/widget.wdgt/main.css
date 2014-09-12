@@ -26,8 +26,8 @@ body {
     bottom: 18px;
     width: 13px;
     height: 13px;
-    top: 106px;
-    left: 16px;
+    top: 103px;
+    left: 385px;
 }
 
 #back {
@@ -154,30 +154,6 @@ body {
     bottom: 56px;
 }
 
-#plexLogo {
-    width: 100px;
-    height: 90px;
-    position: absolute;
-    left: 20px;
-    top: 11px;
-    right: auto;
-    bottom: auto;
-    margin-top: 0px;
-}
-
-#inner_image5 {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    top: 0px;
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
 #btnMoveLeft {
     border-width: 1px;
     border-color: black;
@@ -189,7 +165,7 @@ body {
     width: auto;
     height: auto;
     right: 91px;
-    bottom: 55px;
+    bottom: 58px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -290,7 +266,7 @@ body {
     height: auto;
     right: 81px;
     min-height: 28px;
-    bottom: 87px;
+    bottom: 90px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -310,7 +286,7 @@ body {
     height: auto;
     right: 81px;
     min-height: 28px;
-    bottom: 23px;
+    bottom: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -360,12 +336,227 @@ body {
 }
 
 #rectangleShape {
-    width: 276px;
+    width: 106px;
     height: 101px;
     position: absolute;
-    left: 128px;
+    left: 297px;
     top: 18px;
     right: auto;
     bottom: auto;
     margin-top: 0px;
+}
+
+#image {
+    width: 42px;
+    height: 69px;
+    position: absolute;
+    left: 44px;
+    top: 26px;
+    right: auto;
+    bottom: auto;
+    margin-top: 0px;
+}
+
+#inner_image {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#rectangleShape1 {
+    width: 106px;
+    height: 101px;
+    position: absolute;
+    left: 177px;
+    top: 18px;
+    right: auto;
+    bottom: auto;
+    margin-top: 0px;
+}
+
+#btnStepBack {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 183px;
+    top: 24px;
+    margin-top: 0px;
+    background-image: url(Images/btnStepBackward.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 90px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnStepBack:hover {
+    background-image: url(Images/btnStepBackward_on.png);
+}
+
+#btnPause {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 215px;
+    top: 24px;
+    margin-top: 0px;
+    background-image: url(Images/btnPause.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 90px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnPause:hover {
+    background-image: url(Images/btnPause_on.png);
+}
+
+#btnStepForward {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 248px;
+    top: 24px;
+    margin-top: 0px;
+    background-image: url(Images/btnStepForward.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 90px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnStepForward:hover {
+    background-image: url(Images/btnStepForward_on.png);
+}
+
+#btnRewind {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 183px;
+    top: 56px;
+    margin-top: 0px;
+    background-image: url(Images/btnRewind.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 58px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnRewind:hover {
+    background-image: url(Images/btnRewind_on.png);
+}
+
+#btnSkipPrevious {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 183px;
+    top: 88px;
+    margin-top: 0px;
+    background-image: url(Images/btnSkipPrevious.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 23px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnSkipPrevious:hover {
+    background-image: url(Images/btnSkipPrevious_on.png);
+}
+
+#btnPlay {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 215px;
+    top: 56px;
+    margin-top: 0px;
+    background-image: url(Images/btnPlay.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 58px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnPlay:hover {
+    background-image: url(Images/btnPlay_on.png);
+}
+
+#btnStop {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 215px;
+    top: 88px;
+    margin-top: 0px;
+    background-image: url(Images/btnStop.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 23px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnStop:hover {
+    background-image: url(Images/btnStop_on.png);
+}
+
+#btnFastForward {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 248px;
+    top: 56px;
+    margin-top: 0px;
+    background-image: url(Images/btnFastForward.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 58px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnFastForward:hover {
+    background-image: url(Images/btnFastForward_on.png);
+}
+
+#btnSkipNext {
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left: 248px;
+    top: 88px;
+    margin-top: 0px;
+    background-image: url(Images/btnSkipNext.png);
+    width: 28px;
+    height: auto;
+    right: 81px;
+    min-height: 28px;
+    bottom: 23px;
+    background-repeat: no-repeat no-repeat;
+}
+
+#btnSkipNext:hover {
+    background-image: url(Images/btnSkipNext_on.png);
 }
