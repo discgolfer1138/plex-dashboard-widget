@@ -30,7 +30,7 @@
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>4</integer>
+	<integer>3</integer>
 	<key>DeploymentOptions</key>
 	<dict>
 		<key>Destination</key>
@@ -68,8 +68,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {246, 432}}</string>
-			<string>{{0, 442}, {246, 198}}</string>
+			<string>{{0, 0}, {255, 432}}</string>
+			<string>{{0, 442}, {255, 198}}</string>
 		</array>
 	</dict>
 	<key>Widget</key>
@@ -273,7 +273,7 @@
 		<key>Objects view last selections</key>
 		<array>
 			<array>
-				<integer>4</integer>
+				<integer>3</integer>
 			</array>
 		</array>
 		<key>Opened Steps</key>
