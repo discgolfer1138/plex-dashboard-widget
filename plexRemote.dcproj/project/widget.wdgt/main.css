@@ -379,7 +379,7 @@ body {
     border-color: black;
     position: absolute;
     left: 10px;
-    top: 9px;
+    top: 41px;
     margin-top: 0px;
     background-image: url(Images/btnStepBackward.png);
     min-height: 28px;
@@ -415,7 +415,7 @@ body {
     border-color: black;
     position: absolute;
     left: 76px;
-    top: 9px;
+    top: 41px;
     margin-top: 0px;
     background-image: url(Images/btnStepForward.png);
     min-height: 28px;
@@ -433,7 +433,7 @@ body {
     border-color: black;
     position: absolute;
     left: 10px;
-    top: 41px;
+    top: 9px;
     margin-top: 0px;
     background-image: url(Images/btnRewind.png);
     min-height: 28px;
@@ -446,7 +446,7 @@ body {
     background-image: url(Images/btnRewind_on.png);
 }
 
-#btnSkipPrevious {
+#btnBigStepBack {
     border-width: 1px;
     border-color: black;
     position: absolute;
@@ -460,7 +460,7 @@ body {
     background-repeat: no-repeat no-repeat;
 }
 
-#btnSkipPrevious:hover {
+#btnBigStepBack:hover {
     background-image: url(Images/btnSkipPrevious_on.png);
 }
 
@@ -505,7 +505,7 @@ body {
     border-color: black;
     position: absolute;
     left: 76px;
-    top: 41px;
+    top: 9px;
     margin-top: 0px;
     background-image: url(Images/btnFastForward.png);
     min-height: 28px;
@@ -518,7 +518,7 @@ body {
     background-image: url(Images/btnFastForward_on.png);
 }
 
-#btnSkipNext {
+#btnBigStepForward {
     border-width: 1px;
     border-color: black;
     position: absolute;
@@ -533,7 +533,7 @@ body {
     background-repeat: no-repeat no-repeat;
 }
 
-#btnSkipNext:hover {
+#btnBigStepForward:hover {
     background-image: url(Images/btnSkipNext_on.png);
 }
 

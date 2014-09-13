@@ -4,11 +4,11 @@
 <dict>
 	<key>Breakpoints</key>
 	<dict>
-		<key>widget.wdgt/main.js:228</key>
-		<string>-sendNavigationAction</string>
-		<key>widget.wdgt/main.js:233</key>
+		<key>widget.wdgt/main.js:218</key>
+		<string>-</string>
+		<key>widget.wdgt/main.js:221</key>
 		<string>-toggleView</string>
-		<key>widget.wdgt/main.js:240</key>
+		<key>widget.wdgt/main.js:254</key>
 		<string>-</string>
 	</dict>
 	<key>BreakpointsFrame</key>
@@ -25,12 +25,12 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1195, 208}}</string>
-			<string>{{0, 218}, {1195, 422}}</string>
+			<string>{{0, 0}, {1112, 208}}</string>
+			<string>{{0, 218}, {1112, 422}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>0</integer>
+	<integer>4</integer>
 	<key>DeploymentOptions</key>
 	<dict>
 		<key>Destination</key>
@@ -52,8 +52,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {170, 661}}</string>
-			<string>{{171, 0}, {1196, 661}}</string>
+			<string>{{0, 0}, {253, 661}}</string>
+			<string>{{254, 0}, {1113, 661}}</string>
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
@@ -263,9 +263,19 @@
 				<integer>0</integer>
 				<integer>3</integer>
 			</array>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+				<integer>3</integer>
+				<integer>1</integer>
+			</array>
 		</array>
 		<key>Objects view last selections</key>
-		<array/>
+		<array>
+			<array>
+				<integer>4</integer>
+			</array>
+		</array>
 		<key>Opened Steps</key>
 		<array>
 			<integer>0</integer>
@@ -275,7 +285,7 @@
 		<array>
 			<string>view2</string>
 			<string>view1</string>
-			<string>vwNavigation</string>
+			<string>vwPlayback</string>
 			<string>front</string>
 		</array>
 	</dict>

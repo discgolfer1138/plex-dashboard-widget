@@ -213,19 +213,7 @@ function sendNavigationAction(event)
     var btnId = event.toElement.id;
     var actionCmd = btnIdToActionCmd[btnId];
 
-    var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
-    var port = widget.preferenceForKey(widget.identifier + "-" + "port");
-    var clientHost = widget.preferenceForKey(widget.identifier + "-" + "clientHost");
-    var cmdURL = "http://"+hostname+":"+port+"/system/players/"+clientHost+"/navigation/"+actionCmd;
-
-    //send cmd
-    xmlRequest = new XMLHttpRequest();
-    xmlRequest.setRequestHeader("Cache-Control", "no-cache");
-    xmlRequest.open("GET",cmdURL,true);
-    xmlRequest.send(null);
-
-    alert('button clicked for navAction '+actionCmd);
-    alert('cmdUrl: '+cmdURL);
+    sendActionCommand(actionCmd, 'navigation');
 }
 
 function toggleView(event)
@@ -235,4 +223,30 @@ function toggleView(event)
     var nextView = (currentView!='vwPlayback') ? 'vwPlayback' : 'vwNavigation';
     stkControls.setCurrentView(nextView);
     alert('stkControls view set to '+nextView);
+}
+
+
+function sendPlaybackAction(event)
+{
+    var btnId = event.toElement.id;
+    var actionCmd = btnIdToPlaybackCmd[btnId];
+    
+    sendActionCommand(actionCmd, 'playback');
+}
+
+function sendActionCommand(actionCmd, cmdType){
+    var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
+    var port = widget.preferenceForKey(widget.identifier + "-" + "port");
+    var clientHost = widget.preferenceForKey(widget.identifier + "-" + "clientHost");
+    var cmdURL = "http://"+hostname+":"+port+"/system/players/"+clientHost+"/"+cmdType+"/"+actionCmd;
+
+    //send cmd
+    xmlRequest = new XMLHttpRequest();
+    xmlRequest.setRequestHeader("Cache-Control", "no-cache");
+    xmlRequest.open("GET",cmdURL,true);
+    xmlRequest.send(null);
+
+    alert('button clicked for '+actionCmd+' '+cmdType+' action');
+    alert('cmdUrl: '+cmdURL);
+
 }
