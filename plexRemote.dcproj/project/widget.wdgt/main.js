@@ -227,3 +227,12 @@ function sendNavigationAction(event)
     alert('button clicked for navAction '+actionCmd);
     alert('cmdUrl: '+cmdURL);
 }
+
+function toggleView(event)
+{
+    var stkControls = document.getElementById('stkControls').object;
+    var currentView = stkControls.getCurrentView().id;
+    var nextView = (currentView!='vwPlayback') ? 'vwPlayback' : 'vwNavigation';
+    stkControls.setCurrentView(nextView);
+    alert('stkControls view set to '+nextView);
+}

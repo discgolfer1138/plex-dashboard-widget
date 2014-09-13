@@ -7,7 +7,7 @@
 var dashcodePartSpecs = {
     "btnReloadClients": { "creationFunction": "CreateButton", "leftImageWidth": 10, "onclick": "reloadClients", "rightImageWidth": 10, "text": "Reload Clients" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Done" },
-    "image": { "view": "DC.ImageLayout" },
+    "imgPlexLogo": { "view": "DC.ImageLayout" },
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
     "lblClient": { "text": "client", "view": "DC.Text" },
     "lblCurrentClient": { "text": "client not set", "view": "DC.Text" },
@@ -16,8 +16,10 @@ var dashcodePartSpecs = {
     "popClient": { "creationFunction": "CreatePopupButton", "leftImageWidth": 11, "options": ["Item 1", "Item 2", "Item 3"], "rightImageWidth": 16 },
     "rectangleShape": { "creationFunction": "CreateShape", "leftImageWidth": 5, "rightImageWidth": 5 },
     "rectangleShape1": { "creationFunction": "CreateShape", "leftImageWidth": 5, "rightImageWidth": 5 },
+    "stkControls": { "subviewsTransitions": [{ "direction": "right-left", "duration": "", "timing": "ease-in-out", "type": "push" }, { "direction": "right-left", "duration": "", "timing": "ease-in-out", "type": "push" }], "view": "DC.StackLayout" },
     "txtHost": { "view": "DC.TextField" }
 };
+
 
 
 

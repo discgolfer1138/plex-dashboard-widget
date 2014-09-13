@@ -16,7 +16,7 @@ body {
     width: auto;
     height: auto;
     opacity: 1;
-    right: 0px;
+    right: 48px;
     bottom: 1px;
 }
 
@@ -26,8 +26,8 @@ body {
     bottom: 18px;
     width: 13px;
     height: 13px;
-    top: 103px;
-    left: 385px;
+    top: 138px;
+    left: 137px;
 }
 
 #back {
@@ -55,25 +55,28 @@ body {
 
 #txtHost {
     position: absolute;
-    width: 175px;
+    width: 99px;
     color: black;
     font-family: HelveticaNeue;
     font-size: 10pt;
-    left: 73px;
+    left: 18px;
     top: 33px;
 }
 
 #lblHost {
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: auto;
-    height: auto;
+    width: 26px;
+    height: 15px;
     position: absolute;
-    left: 35px;
-    top: 35px;
+    left: 18px;
+    top: 15px;
     margin-top: 0px;
+    color: rgb(255, 128, 0);
+    cursor: default;
+    -khtml-user-select: none;
 }
 
 .selected #lblHost {
@@ -86,21 +89,24 @@ body {
     color: black;
     font-family: HelveticaNeue;
     font-size: 10pt;
-    left: 73px;
-    top: 63px;
+    left: 129px;
+    top: 33px;
 }
 
 #lblPort {
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: auto;
-    height: auto;
+    width: 27px;
+    height: 16px;
     position: absolute;
-    left: 36px;
-    top: 65px;
+    left: 129px;
+    top: 15px;
     margin-top: 0px;
+    color: rgb(255, 128, 0);
+    cursor: default;
+    -khtml-user-select: none;
 }
 
 .selected #lblPort {
@@ -108,16 +114,20 @@ body {
 }
 
 #lblClient {
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
     width: auto;
     height: auto;
     position: absolute;
-    left: 28px;
-    top: 94px;
+    left: 18px;
+    top: 69px;
     margin-top: 0px;
+    right: 167px;
+    cursor: default;
+    -khtml-user-select: none;
+    color: rgb(255, 128, 0);
 }
 
 .selected #lblClient {
@@ -128,44 +138,41 @@ body {
     font-family: HelveticaNeue-Bold;
     font-size: 12px;
     text-align: left;
-    width: 70px;
-    height: auto;
+    width: 180px;
+    height: 21px;
     position: absolute;
-    left: 73px;
-    top: 93px;
+    left: 18px;
+    top: 88px;
     right: auto;
     margin-top: 0px;
-    bottom: 26px;
 }
 
 #btnReloadClients {
     font-family: HelveticaNeue-Bold;
     font-size: 12px;
     text-align: center;
-    width: 102px;
+    width: 119px;
     cursor: default;
     -khtml-user-select: none;
     height: auto;
     position: absolute;
-    left: 153px;
-    top: 65px;
+    left: 18px;
+    top: 124px;
     right: auto;
     margin-top: 0px;
-    bottom: 56px;
+    bottom: 28px;
 }
 
 #btnMoveLeft {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 305px;
-    top: 56px;
+    left: 10px;
+    top: 40px;
     margin-top: 0px;
     background-image: url(Images/btnMoveLeft.png);
-    width: auto;
-    height: auto;
-    right: 91px;
-    bottom: 58px;
+    width: 26px;
+    height: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -182,14 +189,12 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 337px;
-    top: 56px;
+    left: 43px;
+    top: 40px;
     margin-top: 0px;
     background-image: url(Images/btnSelect.png);
-    width: auto;
-    height: auto;
-    right: 59px;
-    bottom: 55px;
+    height: 26px;
+    width: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -201,14 +206,12 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 370px;
-    top: 56px;
+    left: 75px;
+    top: 40px;
     margin-top: 0px;
     background-image: url(Images/btnMoveRight.png);
-    width: auto;
-    height: auto;
-    right: 26px;
-    bottom: 55px;
+    height: 26px;
+    width: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -220,14 +223,12 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 337px;
-    top: 24px;
+    left: 43px;
+    top: 9px;
     margin-top: 0px;
     background-image: url(Images/btnMoveUp.png);
-    width: auto;
-    height: auto;
-    right: 59px;
-    bottom: 87px;
+    height: 26px;
+    width: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -239,14 +240,12 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 337px;
-    top: 88px;
+    left: 43px;
+    top: 73px;
     margin-top: 0px;
     background-image: url(Images/btnMoveDown.png);
-    width: auto;
-    height: auto;
-    right: 59px;
-    bottom: 23px;
+    height: 26px;
+    width: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -258,15 +257,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 305px;
-    top: 24px;
+    left: 10px;
+    top: 9px;
     margin-top: 0px;
     background-image: url(Images/btnBack.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 90px;
+    height: 28px;
+    width: 26px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -278,15 +275,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 305px;
-    top: 88px;
+    left: 10px;
+    top: 73px;
     margin-top: 0px;
     background-image: url(Images/btnToggleOSD.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 26px;
+    width: 26px;
+    height: 28px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -298,15 +293,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 370px;
-    top: 24px;
+    left: 75px;
+    top: 9px;
     margin-top: 0px;
     background-image: url(Images/btnContextMenu.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 87px;
+    width: 26px;
+    height: 28px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -319,16 +312,16 @@ body {
     font-family: 'Lucida Grande';
     text-overflow: ellipsis;
     overflow: hidden;
-    width: auto;
-    height: auto;
+    width: 133px;
+    height: 23px;
     position: absolute;
-    left: 20px;
-    top: 104px;
+    left: 17px;
+    top: 133px;
     margin-top: 0px;
-    color: rgb(253, 130, 8);
+    color: rgb(255, 128, 0);
     text-align: center;
-    right: 303px;
-    bottom: 23px;
+    cursor: default;
+    -khtml-user-select: none;
 }
 
 .selected #lblCurrentClient {
@@ -339,19 +332,19 @@ body {
     width: 106px;
     height: 101px;
     position: absolute;
-    left: 297px;
-    top: 18px;
+    left: 3px;
+    top: 3px;
     right: auto;
     bottom: auto;
     margin-top: 0px;
 }
 
-#image {
-    width: 42px;
-    height: 69px;
+#imgPlexLogo {
+    width: 22px;
+    height: 21px;
     position: absolute;
-    left: 44px;
-    top: 26px;
+    left: 15px;
+    top: 24px;
     right: auto;
     bottom: auto;
     margin-top: 0px;
@@ -374,8 +367,8 @@ body {
     width: 106px;
     height: 101px;
     position: absolute;
-    left: 177px;
-    top: 18px;
+    left: 3px;
+    top: 3px;
     right: auto;
     bottom: auto;
     margin-top: 0px;
@@ -385,15 +378,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 183px;
-    top: 24px;
+    left: 10px;
+    top: 9px;
     margin-top: 0px;
     background-image: url(Images/btnStepBackward.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 90px;
+    width: 26px;
+    height: 28px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -405,15 +396,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 215px;
-    top: 24px;
+    left: 43px;
+    top: 9px;
     margin-top: 0px;
     background-image: url(Images/btnPause.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 90px;
+    width: 26px;
+    height: 28px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -425,15 +414,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 248px;
-    top: 24px;
+    left: 76px;
+    top: 9px;
     margin-top: 0px;
     background-image: url(Images/btnStepForward.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 90px;
+    width: 26px;
+    height: 28px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -445,15 +432,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 183px;
-    top: 56px;
+    left: 10px;
+    top: 41px;
     margin-top: 0px;
     background-image: url(Images/btnRewind.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 58px;
+    width: 26px;
+    height: 28px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -465,15 +450,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 183px;
-    top: 88px;
+    left: 10px;
+    top: 73px;
     margin-top: 0px;
     background-image: url(Images/btnSkipPrevious.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 23px;
+    width: 26px;
+    height: 28px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -485,15 +468,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 215px;
-    top: 56px;
+    left: 43px;
+    top: 41px;
     margin-top: 0px;
     background-image: url(Images/btnPlay.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 58px;
+    width: 26px;
+    height: 28px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -505,15 +486,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 215px;
-    top: 88px;
+    left: 43px;
+    top: 73px;
     margin-top: 0px;
     background-image: url(Images/btnStop.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 23px;
+    width: 26px;
+    height: 28px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -525,15 +504,13 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 248px;
-    top: 56px;
+    left: 76px;
+    top: 41px;
     margin-top: 0px;
     background-image: url(Images/btnFastForward.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 58px;
+    width: 26px;
+    height: 28px;
     background-repeat: no-repeat no-repeat;
 }
 
@@ -545,18 +522,45 @@ body {
     border-width: 1px;
     border-color: black;
     position: absolute;
-    left: 248px;
-    top: 88px;
+    left: 76px;
+    top: 73px;
     margin-top: 0px;
     background-image: url(Images/btnSkipNext.png);
-    width: 28px;
-    height: auto;
-    right: 81px;
     min-height: 28px;
-    bottom: 23px;
+    width: 26px;
+    height: auto;
+    bottom: 6px;
     background-repeat: no-repeat no-repeat;
 }
 
 #btnSkipNext:hover {
     background-image: url(Images/btnSkipNext_on.png);
+}
+
+#stkControls {
+    overflow: hidden;
+    z-index: 0;
+    width: 112px;
+    height: 107px;
+    position: absolute;
+    left: 39px;
+    top: 18px;
+    right: 0px;
+    bottom: 39px;
+    margin-top: 0px;
+}
+
+#vwNavigation {
+    width: 100%;
+    display: none;
+    position: relative;
+    height: auto;
+    min-height: 107px;
+}
+
+#vwPlayback {
+    width: 100%;
+    min-height: 107px;
+    display: none;
+    position: relative;
 }
