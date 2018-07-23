@@ -147,10 +147,12 @@ function reloadClients(event)
 {
     var hostname = document.getElementById("txtHost").value;
     var port = document.getElementById("txtPort").value;
+    var token = document.getElementById("txtToken").value;
 
     if(hostname && port){
         widget.setPreferenceForKey(hostname, widget.identifier + "-" + "hostname");
         widget.setPreferenceForKey(port, widget.identifier + "-" + "port");
+        widget.setPreferenceForKey(port, widget.identifier + "-" + "token");
         updateClientList();
     }
 }
@@ -158,7 +160,8 @@ function reloadClients(event)
 function updateClientList(){
     var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
     var port = widget.preferenceForKey(widget.identifier + "-" + "port");
-    var clientListURL = "http://" + hostname + ":" + port + "/clients";
+    var token = widget.preferenceForKey(widget.identifier + "-" + "token");
+    var clientListURL = "http://" + hostname + ":" + port + "/clients?X-Plex-Token=" + token;
     alert(clientListURL);
     loadClientXML(clientListURL);
 }
