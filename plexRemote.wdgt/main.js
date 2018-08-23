@@ -40,8 +40,9 @@ function load()
     // check prefs are set
     var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
     var port = widget.preferenceForKey(widget.identifier + "-" + "port");
+    var token = widget.preferenceForKey(widget.identifier + "-" + "token");
     var clientHost = widget.preferenceForKey(widget.identifier + "-" + "clientHost");
-    if(!hostname || !port || !clientHost) showBack();
+    if(!hostname || !port || !token || !clientHost) showBack();
 }
 
 //
@@ -147,10 +148,12 @@ function reloadClients(event)
 {
     var hostname = document.getElementById("txtHost").value;
     var port = document.getElementById("txtPort").value;
+    var token = document.getElementById("txtToken").value;
 
-    if(hostname && port){
+    if(hostname && port && token){
         widget.setPreferenceForKey(hostname, widget.identifier + "-" + "hostname");
         widget.setPreferenceForKey(port, widget.identifier + "-" + "port");
+        widget.setPreferenceForKey(token, widget.identifier + "-" + "token");
         updateClientList();
     }
 }
@@ -158,8 +161,9 @@ function reloadClients(event)
 function updateClientList(){
     var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
     var port = widget.preferenceForKey(widget.identifier + "-" + "port");
-    var clientListURL = "http://" + hostname + ":" + port + "/clients";
-    alert(clientListURL);
+    var token = widget.preferenceForKey(widget.identifier + "-" + "token");
+    var clientListURL = "http://" + hostname + ":" + port + "/clients?X-Plex-Token=" + token;
+    console.log(clientListURL);
     loadClientXML(clientListURL);
 }
 
@@ -201,9 +205,10 @@ function setClient(){
     var clientHost = popClient.getValue();
     var clientName = popClient.getName();
     widget.setPreferenceForKey(clientHost, widget.identifier + "-" + "clientHost");
+    widget.setPreferenceForKey(clientName, widget.identifier + "-" + "clientName");
 
     var lblCurrentClient = document.getElementById("lblCurrentClient");
-    lblCurrentClient.textContent = clientHost;
+    lblCurrentClient.textContent = clientName;
 
     alert('client set to: '+clientName+" - "+clientHost);
 }
@@ -237,8 +242,9 @@ function sendPlaybackAction(event)
 function sendActionCommand(actionCmd, cmdType){
     var hostname = widget.preferenceForKey(widget.identifier + "-" + "hostname");
     var port = widget.preferenceForKey(widget.identifier + "-" + "port");
+    var token = widget.preferenceForKey(widget.identifier + "-" + "token");
     var clientHost = widget.preferenceForKey(widget.identifier + "-" + "clientHost");
-    var cmdURL = "http://"+hostname+":"+port+"/system/players/"+clientHost+"/"+cmdType+"/"+actionCmd;
+    var cmdURL = "http://"+hostname+":"+port+"/system/players/"+clientHost+"/"+cmdType+"/"+actionCmd + "?X-Plex-Token=" + token;
 
     //send cmd
     xmlRequest = new XMLHttpRequest();
@@ -248,5 +254,4 @@ function sendActionCommand(actionCmd, cmdType){
 
     alert('button clicked for '+actionCmd+' '+cmdType+' action');
     alert('cmdUrl: '+cmdURL);
-
 }

@@ -5,7 +5,9 @@
  */
 
 body {
-    margin: 0px;
+    margin: 0;
+    height: auto;
+    width: auto;
 }
 
 #frontImg {
@@ -46,29 +48,32 @@ body {
 }
 
 #done {
+    font-size: 10px;
     position: absolute;
     right: 23px;
     margin-left: auto;
-    bottom: 24px;
+    bottom: 4px;
     margin-top: auto;
 }
 
 #txtHost {
     position: absolute;
+    height: 12px;
     width: 99px;
     color: black;
     font-family: HelveticaNeue;
     font-size: 10pt;
     left: 18px;
-    top: 33px;
+    top: 29px;
 }
 
 #lblHost {
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 10px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 26px;
+    width: 36px;
     height: 15px;
     position: absolute;
     left: 18px;
@@ -86,15 +91,17 @@ body {
 #txtPort {
     position: absolute;
     width: 64px;
+    height: 12px;
     color: black;
     font-family: HelveticaNeue;
     font-size: 10pt;
     left: 129px;
-    top: 33px;
+    top: 29px;
 }
 
 #lblPort {
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 10px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -113,16 +120,49 @@ body {
     color: white;
 }
 
-#lblClient {
-    font-size: 12px;
+#txtToken {
+    position: absolute;
+    height: 12px;
+    width: 175px;
+    color: black;
+    font-family: HelveticaNeue;
+    font-size: 10pt;
+    left: 18px;
+    top: 68px;
+}
+
+#lblToken {
+    font-weight: bold;
+    font-size: 10px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: auto;
+    width: 45px;
+    height: 16px;
+    position: absolute;
+    left: 18px;
+    top: 49px;
+    margin-top: 0px;
+    color: rgb(255, 128, 0);
+    cursor: default;
+    -khtml-user-select: none;
+}
+
+.selected #lblToken {
+    color: white;
+}
+
+#lblClient {
+    font-weight: bold;
+    font-size: 10px;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 45px;
     height: auto;
     position: absolute;
     left: 18px;
-    top: 69px;
+    top: 94px;
     margin-top: 0px;
     right: 167px;
     cursor: default;
@@ -136,20 +176,20 @@ body {
 
 #popClient {
     font-family: HelveticaNeue-Bold;
-    font-size: 12px;
+    font-size: 10px;
     text-align: left;
     width: 180px;
     height: 21px;
     position: absolute;
     left: 18px;
-    top: 88px;
+    top: 113px;
     right: auto;
     margin-top: 0px;
 }
 
 #btnReloadClients {
     font-family: HelveticaNeue-Bold;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     width: 119px;
     cursor: default;
@@ -157,7 +197,7 @@ body {
     height: auto;
     position: absolute;
     left: 18px;
-    top: 124px;
+    top: 144px;
     right: auto;
     margin-top: 0px;
     bottom: 28px;

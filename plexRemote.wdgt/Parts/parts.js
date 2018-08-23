@@ -21,6 +21,7 @@ var dashcodePartSpecs = {
     "lblCurrentClient": { "text": "client not set", "view": "DC.Text" },
     "lblHost": { "text": "host", "view": "DC.Text" },
     "lblPort": { "text": "port", "view": "DC.Text" },
+    "lblToken": { "text": "token", "view": "DC.Text" },
     "popClient": { "creationFunction": "CreatePopupButton", "leftImageWidth": 11, "options": ["Item 1", "Item 2", "Item 3"], "rightImageWidth": 16 },
     "rectangleShape": { "creationFunction": "CreateShape", "leftImageWidth": 5, "rightImageWidth": 5 },
     "rectangleShape1": { "creationFunction": "CreateShape", "leftImageWidth": 5, "rightImageWidth": 5 },
