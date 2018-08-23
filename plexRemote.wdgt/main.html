@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="Parts/Transitions.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="front">
+        <img id="frontImg" src="Parts/Images/front.png" alt="">
+        <div id="lblCurrentClient"></div>
+        <div id="imgPlexLogo" onclick="toggleView(event)"><img src="Images/plex_logo.png" id="inner_image"></div>
+        <div id="stkControls"><div id="vwNavigation">
+                <div id="rectangleShape"></div>
+                <div id="btnMoveLeft" class="navBtn" onclick="sendNavigationAction(event)"></div>
+                <div id="btnBack" class="navBtn" onclick="sendNavigationAction(event)"></div>
+                <div id="btnToggleOSD" class="navBtn" onclick="sendNavigationAction(event)"></div>
+                <div id="btnContextMenu" class="navBtn" onclick="sendNavigationAction(event)"></div>
+                <div id="btnSelect" class="navBtn" onclick="sendNavigationAction(event)"></div>
+                <div id="btnMoveRight" class="navBtn" onclick="sendNavigationAction(event)"></div>
+                <div id="btnMoveUp" class="navBtn" onclick="sendNavigationAction(event)"></div>
+                <div id="btnMoveDown" class="navBtn" onclick="sendNavigationAction(event)"></div>
+            </div><div id="vwPlayback">
+                <div id="rectangleShape1"></div>
+                <div id="btnStepBack" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnPause" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnStepForward" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnRewind" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnBigStepBack" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnPlay" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnStop" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnFastForward" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+                <div id="btnBigStepForward" class="navBtn" onclick="sendPlaybackAction(event)"></div>
+            </div></div>
+        <div id="info"></div>
+    </div>
+    <div id="back">
+        <img id="backImg" src="Parts/Images/back.png" alt="">
+        <div id="done"></div>
+        <input id="txtHost" type="text" name="" value="slingshot.local">
+        <div id="lblHost"></div>
+        <input id="txtPort" type="text" name="" value="32400" maxlength="6">
+        <div id="lblPort"></div>
+        <div id="lblClient"></div>
+        <div id="popClient"></div>
+        <div id="btnReloadClients"></div>
+    </div>
+</body>
+</html>

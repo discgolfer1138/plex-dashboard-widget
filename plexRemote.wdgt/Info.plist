@@ -4,14 +4,16 @@
 <dict>
 	<key>AllowNetworkAccess</key>
 	<true/>
+	<key>BackwardsCompatibleClassLookup</key>
+	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>Untitled</string>
+	<string>plexRemote</string>
 	<key>CFBundleIdentifier</key>
 	<string>io.thechad.widget.plexRemote</string>
 	<key>CFBundleName</key>
-	<string>Untitled</string>
+	<string>plexRemote</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
